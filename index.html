@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Liens vers les styles CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="intro">
+        <h1>Panier d'Achat</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="cart">
+                <!-- Premier article dans le panier -->
+                <article class="product">
+                    <header>
+                        <a class="remove">
+                            <img src="./img/airfrance.png" alt="airfrance">
+                            <h3>Retirer le produit</h3>
+                        </a>
+                    </header>
+                    <div class="content">
+                        <div class="alig">
+                            <h1>Airfrance</h1>
+                            <!-- Conteneur pour le bouton "Like" -->
+                            <span class="like-container">
+                                <button class="likeButton" onclick="toggleLike('button1')">❤️ J'aime</button>
+                                <span id="likeCountbutton1">0</span>
+                            </span>
+                        </div>
+                        <!-- Description du produit -->
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, numquam quis
+                        perspiciatis ea ad omnis provident laborum dolore in atque.
+                    </div>
+                    <footer class="content">
+                        <!-- Boutons pour ajuster la quantité -->
+                        <span class="qt-minus">-</span>
+                        <span class="qt">0</span>
+                        <span class="qt-plus">+</span>
+                        <!-- Prix total et prix unitaire -->
+                        <h2 class="full-price">
+                            0.000 TND
+                        </h2>
+                        <h2 class="price">
+                            50.000 TND
+                        </h2>
+                    </footer>
+                </article>
+
+                <!-- Deuxième article dans le panier -->
+                <article class="product">
+                    <header>
+                        <a class="remove">
+                            <img src="./img/alitalia.png" alt="alitalia">
+                            <h3>Retirer le produit</h3>
+                        </a>
+                    </header>
+                    <div class="content">
+                        <div class="alig">
+                            <h1>Alitalia</h1>
+                            <!-- Conteneur pour le bouton "Like" -->
+                            <span class="like-container">
+                                <button class="likeButton" onclick="toggleLike('button2')">❤️ J'aime</button>
+                                <span id="likeCountbutton2">0</span>
+                            </span>
+                        </div>
+                        <!-- Description du produit -->
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, numquam quis
+                        perspiciatis ea ad omnis provident laborum dolore in atque.
+                    </div>
+                    <footer class="content">
+                        <!-- Boutons pour ajuster la quantité -->
+                        <span class="qt-minus">-</span>
+                        <span class="qt">0</span>
+                        <span class="qt-plus">+</span>
+                        <!-- Prix total et prix unitaire -->
+                        <h2 class="full-price">
+                            0.000 TND
+                        </h2>
+                        <h2 class="price">
+                            80.000 TND
+                        </h2>
+                    </footer>
+                </article>
+
+                <!-- Troisième article dans le panier -->
+                <article class="product">
+                    <header>
+                        <a class="remove">
+                            <img src="./img/delta.png" alt="delta">
+                            <h3>Retirer le produit</h3>
+                        </a>
+                    </header>
+                    <div class="content">
+                        <div class="alig">
+                            <h1>Delta</h1>
+                            <!-- Conteneur pour le bouton "Like" -->
+                            <span class="like-container">
+                                <button class="likeButton" onclick="toggleLike('button3')">❤️ J'aime</button>
+                                <span id="likeCountbutton3">0</span>
+                            </span>
+                        </div>
+                        <!-- Description du produit -->
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, numquam quis
+                        perspiciatis ea ad omnis provident laborum dolore in atque.
+                    </div>
+                    <footer class="content">
+                        <!-- Boutons pour ajuster la quantité -->
+                        <span class="qt-minus">-</span>
+                        <span class="qt">0</span>
+                        <span class="qt-plus">+</span>
+                        <!-- Prix total et prix unitaire -->
+                        <h2 class="full-price">
+                            0.000 TND
+                        </h2>
+                        <h2 class="price">
+                            75.000 TND
+                        </h2>
+                    </footer>
+                </article>
+
+            </section>
+        </div>
+        <!-- Pied de page avec les détails du panier -->
+        <footer id="site-footer">
+            <div class="container clearfix">
+                <div class="left">
+                    <!-- Sous-total, taxes et frais de livraison -->
+                    <h2 class="subtotal">Sous-total : <span>0.000</span> TND</h2>
+                    <h3 class="tax">Taxes (19%) : <span>0.000</span> TND</h3>
+                    <h3 hidden class="shipping">Livraison : <span>0.000</span> TND</h3>
+                </div>
+                <div class="right">
+                    <!-- Total et bouton de paiement -->
+                    <h1 class="total">Total : <span>0.000</span> TND</h1>
+                    <a class="btn">Paiement</a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Scripts JavaScript (jQuery et script personnalisé) -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
